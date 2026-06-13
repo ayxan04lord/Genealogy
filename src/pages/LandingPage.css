@@ -1,0 +1,318 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── Hero ── */
+.landing__hero {
+  position: relative;
+  background: linear-gradient(135deg, #0d3b20 0%, #145a32 50%, #1a7a44 100%);
+  padding: 120px 24px 80px;
+  overflow: hidden;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing__hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.landing__hero-tree {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(200px, 30vw, 420px);
+  opacity: 0.6;
+}
+
+.landing__hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  text-align: center;
+}
+
+.landing__hero-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #a7f3d0;
+  border-radius: 30px;
+  padding: 6px 18px;
+  font-size: .85rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: .3px;
+}
+
+.landing__hero-title {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.landing__hero-accent {
+  color: #6ee7b7;
+  position: relative;
+}
+.landing__hero-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 2px; left: 0; right: 0;
+  height: 3px;
+  background: #6ee7b7;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+.landing__hero-sub {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.landing__hero-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.landing__btn-primary {
+  background: #6ee7b7;
+  color: #0d3b20;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s, transform .15s;
+  display: flex;
+  align-items: center;
+}
+.landing__btn-primary:hover {
+  background: #a7f3d0;
+  transform: translateY(-2px);
+}
+
+.landing__btn-secondary {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  border-radius: 12px;
+  padding: 13px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s;
+  display: flex;
+  align-items: center;
+}
+.landing__btn-secondary:hover { background: rgba(255,255,255,0.2); }
+
+/* Hero stats */
+.landing__hero-stats {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 28px;
+  flex-wrap: wrap;
+}
+
+.landing__hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.landing__hero-stat-val {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #6ee7b7;
+  line-height: 1;
+}
+
+.landing__hero-stat-label {
+  font-size: .78rem;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+/* ── Ümumi bölmə stillər ── */
+.landing__section-inner {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.landing__section-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #0d3b20;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.landing__section-title--light { color: #fff; }
+
+.landing__section-sub {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 48px;
+  font-size: 1rem;
+}
+
+/* ── Elm bölməsi ── */
+.landing__science { background: #fff; }
+
+.landing__science-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.landing__science-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 28px 22px;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow .2s, transform .15s;
+}
+.landing__science-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.09);
+  transform: translateY(-3px);
+}
+
+.landing__science-icon {
+  font-size: 1.8rem;
+  color: #145a32;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.landing__science-card h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.landing__science-card p {
+  font-size: .88rem;
+  color: #6b7280;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── Necə işləyir ── */
+.landing__how { background: #f0faf4; }
+
+.landing__how-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  position: relative;
+}
+
+.landing__how-step {
+  text-align: center;
+  padding: 28px 16px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  position: relative;
+  transition: box-shadow .2s;
+}
+.landing__how-step:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+.landing__how-num {
+  position: absolute;
+  top: -14px; left: 50%; transform: translateX(-50%);
+  width: 28px; height: 28px;
+  background: #145a32;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 800;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.landing__how-icon {
+  font-size: 1.8rem;
+  color: #1e8449;
+  display: block;
+  margin: 10px 0 12px;
+}
+
+.landing__how-step h6 {
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+.landing__how-step p {
+  font-size: .82rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Xüsusiyyətlər ── */
+.landing__features {
+  background: linear-gradient(135deg, #0d3b20 0%, #145a32 100%);
+}
+
+.landing__features .landing__section-sub { color: rgba(255,255,255,0.6); }
+
+.landing__features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.landing__feature-card {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 24px 20px;
+  transition: background .2s;
+}
+.landing__feature-card:hover { background: rgba(255,255,255,0.12); }
+
+.landing__feature-card h6 {
+  font-weight: 700;
+  color: #fff;
+  margin: 12px 0 6px;
+}
+.landing__feature-card p {
+  font-size: .85rem;
+  color: rgba(255,255,255,0.65);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .landing__hero { padding: 100px 20px 60px; min-height: auto; }
+  .landing__hero-tree { display: none; }
+  .landing__hero-btns { flex-direction: column; align-items: center; }
+  .landing__section-inner { padding: 48px 20px; }
+}
+
+@media print {
+  .landing__hero, .landing__features { background: #fff !important; color: #000 !important; }
+}

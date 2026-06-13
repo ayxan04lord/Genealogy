@@ -1,0 +1,31 @@
+.np { display: flex; flex-direction: column; gap: 10px; }
+
+.np__persona { display: flex; align-items: center; gap: 12px; padding-right: 28px; }
+.np__photo { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid #1e8449; flex-shrink: 0; }
+.np__avatar { width: 52px; height: 52px; border-radius: 50%; background: #e8f5e9; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.np__avatar i { font-size: 1.6rem; color: #1e8449; }
+
+.np__name { font-size: 1rem; font-weight: 700; color: #145a32; margin: 0 0 4px; }
+.np__badge { font-size: .72rem; border-radius: 20px; padding: 1px 8px; font-weight: 500; }
+.np__badge--m { background: #dbeafe; color: #1d4ed8; }
+.np__badge--f { background: #fce7f3; color: #9c27b0; }
+
+.np__attrs { display: flex; flex-direction: column; gap: 5px; font-size: .83rem; color: #374151; border-top: 1px solid #f3f4f6; padding-top: 8px; }
+.np__attr-row { display: flex; align-items: flex-start; gap: 7px; }
+.np__attr-row i { color: #1e8449; flex-shrink: 0; margin-top: 1px; }
+
+.np__family { background: #f9fafb; border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; gap: 5px; }
+.np__family-group { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; font-size: .8rem; }
+.np__family-label { color: #6b7280; font-weight: 600; flex-shrink: 0; }
+.np__family-name { background: #e8f5e9; color: #145a32; border-radius: 12px; padding: 1px 8px; font-size: .78rem; }
+.np__family-name--spouse { background: #fce7f3; color: #e91e63; }
+
+.np__narativ { border-top: 1px solid #f3f4f6; padding-top: 8px; }
+.np__narativ-toggle { background: none; border: 1px solid #e5e7eb; border-radius: 8px; padding: 4px 10px; font-size: .78rem; color: #145a32; cursor: pointer; width: 100%; text-align: left; display: flex; align-items: center; }
+.np__narativ-toggle:hover { background: #f0fdf4; }
+.np__narativ-text { margin-top: 8px; font-size: .8rem; color: #374151; line-height: 1.7; white-space: pre-wrap; background: #fafafa; border-radius: 8px; padding: 8px 10px; max-height: 160px; overflow-y: auto; }
+
+.np__spouse-form { border: 1px solid #fce7f3; background: #fff5f8; border-radius: 10px; padding: 12px; }
+.np__spouse-title { font-size: .82rem; font-weight: 600; color: #145a32; margin-bottom: 10px; }
+
+.np__actions { display: flex; flex-direction: column; gap: 6px; border-top: 1px solid #f3f4f6; padding-top: 10px; }

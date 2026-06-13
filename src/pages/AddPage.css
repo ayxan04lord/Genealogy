@@ -1,0 +1,88 @@
+.add-page {
+  padding: 2rem 1.5rem 2rem;
+  background: #f0faf4;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.add-page__card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 20px rgba(0,0,0,.08);
+  padding: 1.8rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+.add-page__side {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-page__title {
+  font-weight: 700;
+  color: #145a32;
+  margin-bottom: 1.2rem;
+}
+
+/* Əlaqə idarəsi */
+.add-page__label {
+  display: block;
+  font-size: .78rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.add-page__tabs {
+  display: flex;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 14px;
+  gap: 2px;
+}
+
+.add-page__tab {
+  background: none;
+  border: none;
+  padding: 6px 14px;
+  font-size: .82rem;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  border-radius: 4px 4px 0 0;
+  transition: color .15s;
+  display: flex;
+  align-items: center;
+}
+.add-page__tab:hover { color: #145a32; }
+.add-page__tab--active {
+  color: #145a32;
+  font-weight: 700;
+  border-bottom-color: #145a32;
+}
+
+.add-page__edge-option {
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: .85rem;
+  color: #374151;
+  transition: border-color .15s, background .15s;
+}
+.add-page__edge-option:hover { background: #f9fafb; border-color: #d1d5db; }
+.add-page__edge-option--selected { border-color: #1e8449; background: #f0fdf4; }
+
+@media (max-width: 860px) {
+  .add-page__side { max-width: 100%; }
+}

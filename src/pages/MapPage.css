@@ -1,0 +1,51 @@
+.map-fullpage {
+  position: fixed;
+  top: 56px; left: 0; right: 0; bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f0faf4;
+  z-index: 1;
+}
+
+.map-fullpage__header-spacer { display: none; }
+
+.map-page__info {
+  padding: 8px 16px;
+  font-size: .85rem;
+  color: #374151;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.map-page__container {
+  flex: 1;
+  position: relative;
+}
+
+.map-page__empty-wrap {
+  padding: 120px 2rem 2rem;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Xüsusi marker */
+.map-marker {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+/* Popup */
+.map-popup { min-width: 140px; }
+.map-popup__photo {
+  width: 100%; height: 80px; object-fit: cover;
+  border-radius: 6px; margin-bottom: 6px;
+}
+.map-popup strong { display: block; font-size: .9rem; color: #145a32; margin-bottom: 4px; }
+.map-popup__yer, .map-popup__dates { font-size: .78rem; color: #6b7280; }

@@ -1,0 +1,171 @@
+.stats-page {
+  padding: 2rem 1.5rem 2rem;
+  background: #f0faf4;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.stats-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.stats-page__title {
+  font-weight: 700;
+  color: #145a32;
+  margin: 0;
+}
+
+/* Əsas rəqəm kartları */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stats-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.07);
+  padding: 1.2rem 1rem;
+  text-align: center;
+  transition: transform .15s;
+}
+.stats-card:hover { transform: translateY(-2px); }
+
+.stats-card__icon  { font-size: 1.8rem; display: block; margin-bottom: 8px; }
+.stats-card__value { font-size: 1.6rem; font-weight: 800; margin-bottom: 3px; }
+.stats-card__label { font-size: .78rem; color: #6b7280; }
+
+/* İki sütunlu layout */
+.stats-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.stats-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-page__card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.07);
+  padding: 1.2rem 1.4rem;
+}
+
+.stats-section-title {
+  font-size: .88rem;
+  font-weight: 700;
+  color: #145a32;
+  margin-bottom: 12px;
+}
+
+/* Cins paylanması */
+.stats-gender__bar {
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 10px;
+}
+.stats-gender__male   { background: #1d4ed8; transition: width .5s ease; }
+.stats-gender__female { background: #9c27b0; transition: width .5s ease; }
+
+.stats-gender__legend {
+  display: flex;
+  gap: 16px;
+  font-size: .8rem;
+  color: #374151;
+}
+.stats-gender__dot {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.stats-gender__dot--m { background: #1d4ed8; }
+.stats-gender__dot--f { background: #9c27b0; }
+
+/* Dövrə çizelgesi */
+.stats-decade-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.stats-decade-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .8rem;
+}
+.stats-decade-label {
+  width: 48px;
+  color: #6b7280;
+  text-align: right;
+  flex-shrink: 0;
+}
+.stats-decade-bar-wrap {
+  flex: 1;
+  background: #f3f4f6;
+  border-radius: 4px;
+  height: 16px;
+}
+.stats-decade-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #1e8449, #3dd68c);
+  border-radius: 4px;
+  transition: width .4s ease;
+  min-width: 4px;
+}
+.stats-decade-count {
+  width: 20px;
+  color: #374151;
+  font-weight: 600;
+}
+
+/* Top siyahılar */
+.stats-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: .88rem;
+  color: #374151;
+}
+.stats-top-row:last-child { border-bottom: none; }
+
+.stats-top-badge {
+  background: #dcfce7;
+  color: #166534;
+  font-weight: 700;
+  font-size: .78rem;
+  border-radius: 20px;
+  padding: 1px 10px;
+}
+
+/* Çap */
+@media print {
+  .no-print { display: none !important; }
+  .az-header { display: none !important; }
+  .stats-page {
+    padding-top: 1rem;
+    background: #fff;
+  }
+  .stats-card, .stats-page__card {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+}
+
+@media (max-width: 640px) {
+  .stats-row { flex-direction: column; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}

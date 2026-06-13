@@ -1,0 +1,152 @@
+.az-footer {
+  background: linear-gradient(135deg, #0d3b20 0%, #145a32 60%, #1a6e3c 100%);
+  color: rgba(255,255,255,0.85);
+  margin-top: auto;
+}
+
+.az-footer__inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.4fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 32px 36px;
+}
+
+/* Brand */
+.az-footer__logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.az-footer__tagline {
+  font-size: .95rem;
+  font-weight: 600;
+  color: #a7f3d0;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.az-footer__desc {
+  font-size: .82rem;
+  color: rgba(255,255,255,.65);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Nav */
+.az-footer__heading {
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6ee7b7;
+  margin-bottom: 14px;
+}
+
+.az-footer__nav ul {
+  list-style: none;
+  padding: 0; margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.az-footer__nav a {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+  font-size: .88rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color .15s;
+}
+.az-footer__nav a::before {
+  content: "›";
+  color: #6ee7b7;
+  font-weight: 700;
+}
+.az-footer__nav a:hover { color: #fff; }
+
+/* Paylaş */
+.az-footer__share-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.az-footer__share-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  color: rgba(255,255,255,.85);
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: .84rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.az-footer__share-btn:hover {
+  background: rgba(255,255,255,.18);
+  color: #fff;
+}
+.az-footer__share-btn i { font-size: 1rem; }
+
+/* Info sətirləri */
+.az-footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.az-footer__info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .78rem;
+  color: rgba(255,255,255,.6);
+}
+
+/* Alt xətt */
+.az-footer__bottom {
+  border-top: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: .78rem;
+  color: rgba(255,255,255,.5);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.az-footer__bottom-right {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .az-footer__inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 32px 20px 24px;
+  }
+  .az-footer__bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px 20px;
+  }
+}
+
+@media print {
+  .az-footer { display: none; }
+}

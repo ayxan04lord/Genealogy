@@ -1,0 +1,113 @@
+.mp {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mp__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: .9rem;
+  color: #111827;
+}
+
+.mp__close {
+  background: none; border: none;
+  color: #9ca3af; cursor: pointer;
+  padding: 2px 6px; border-radius: 6px;
+  font-size: .9rem;
+  transition: color .15s, background .15s;
+}
+.mp__close:hover { color: #374151; background: #f3f4f6; }
+
+/* Nikah siyahısı */
+.mp__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mp__item {
+  border: 1px solid #fce7f3;
+  background: #fff5f8;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.mp__item-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.mp__avatar {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1.5px solid #f48fb1;
+}
+
+.mp__avatar--ph {
+  background: #fce7f3;
+  display: flex; align-items: center; justify-content: center;
+}
+.mp__avatar--ph i { color: #e91e63; font-size: .9rem; }
+
+.mp__spouse-name {
+  font-weight: 600;
+  font-size: .88rem;
+  color: #880e4f;
+}
+
+.mp__spouse-meta {
+  font-size: .75rem;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.mp__item-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-xs {
+  padding: 2px 7px;
+  font-size: .75rem;
+  line-height: 1.4;
+  border-radius: 5px;
+}
+
+.mp__edit { padding: 4px 0; }
+
+.mp__empty {
+  font-size: .82rem;
+  color: #9ca3af;
+  text-align: center;
+  padding: 8px 0;
+  margin: 0;
+}
+
+/* Form */
+.mp__form {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 12px;
+}
+
+.mp__form-title {
+  font-size: .82rem;
+  font-weight: 600;
+  color: #145a32;
+  margin-bottom: 10px;
+}
+
+.mp__label {
+  display: block;
+  font-size: .72rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 3px;
+}

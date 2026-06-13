@@ -1,0 +1,42 @@
+.help-page {
+  padding: 2rem 1.5rem 2rem;
+  background: #f0faf4;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.help-page__title {
+  font-weight: 700;
+  color: #145a32;
+  margin-bottom: 1.4rem;
+}
+
+.help-page__card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.2rem 1.4rem;
+}
+
+.help-accordion-item {
+  border-radius: 10px !important;
+  overflow: hidden;
+  margin-bottom: 8px;
+  border: 1px solid #e5e7eb !important;
+}
+
+.help-accordion-item .accordion-button {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.help-accordion-item .accordion-button:not(.collapsed) {
+  color: #145a32;
+  background: #f0fdf4;
+  box-shadow: none;
+}
+
+.help-accordion-item .accordion-button::after {
+  filter: none;
+}

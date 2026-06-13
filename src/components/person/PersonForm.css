@@ -1,0 +1,113 @@
+.pf__title {
+  font-size: .88rem;
+  font-weight: 600;
+  color: #145a32;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.pf__label {
+  display: block;
+  font-size: .75rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+/* Tablar */
+.pf__tabs {
+  display: flex;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 14px;
+  gap: 2px;
+}
+
+.pf__tab {
+  background: none;
+  border: none;
+  padding: 6px 12px;
+  font-size: .82rem;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  border-radius: 4px 4px 0 0;
+  transition: color .15s;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+}
+.pf__tab:hover { color: #145a32; }
+.pf__tab--active {
+  color: #145a32;
+  font-weight: 700;
+  border-bottom-color: #145a32;
+}
+
+.pf__tab-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #f59e0b;
+  margin-left: 4px;
+}
+
+/* Narativ tab */
+.pf__narativ { display: flex; flex-direction: column; gap: 8px; }
+
+.pf__narativ-hint {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: .78rem;
+  color: #92400e;
+}
+
+.pf__narativ-textarea {
+  font-size: .85rem;
+  line-height: 1.7;
+  resize: vertical;
+  min-height: 160px;
+}
+
+.pf__narativ-count {
+  font-size: .72rem;
+  color: #9ca3af;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Foto */
+.pf__photo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.pf__avatar {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  border: 2px dashed #d1d5db;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  cursor: pointer; overflow: hidden;
+  flex-shrink: 0; position: relative;
+  transition: border-color .15s;
+}
+.pf__avatar:hover { border-color: #1e8449; }
+.pf__avatar img { width: 100%; height: 100%; object-fit: cover; }
+.pf__avatar i { font-size: 1.8rem; color: #d1d5db; }
+
+.pf__avatar-hint {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: rgba(0,0,0,.45); color: #fff;
+  font-size: .6rem; text-align: center; padding: 2px 0;
+  opacity: 0; transition: opacity .15s;
+}
+.pf__avatar:hover .pf__avatar-hint { opacity: 1; }
+.pf__rm-photo { padding: 2px 8px; }

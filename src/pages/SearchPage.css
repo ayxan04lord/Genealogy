@@ -1,0 +1,100 @@
+.search-page {
+  padding: 2rem 1.5rem 2rem;
+  background: #f0faf4;
+  display: flex;
+  justify-content: center;
+}
+
+.search-page__card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 20px rgba(0,0,0,.08);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  margin-top: 1rem;
+}
+
+.search-page__title {
+  font-weight: 700;
+  color: #145a32;
+  margin-bottom: 1.2rem;
+}
+
+/* Filter paneli */
+.search-filters {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 14px;
+  animation: filterIn .15s ease;
+}
+@keyframes filterIn {
+  from { opacity:0; transform: translateY(-4px); }
+  to   { opacity:1; transform: none; }
+}
+
+.search-filters__label {
+  display: block;
+  font-size: .75rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+/* Nəticələr */
+.search-page__empty,
+.search-page__placeholder {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6b7280;
+}
+
+.search-page__results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-page__result-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 12px;
+  transition: box-shadow .15s;
+}
+.search-page__result-item:hover { box-shadow: 0 2px 10px rgba(0,0,0,.07); }
+
+.search-result__avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.search-result__avatar--placeholder {
+  background: #e8f5e9;
+  display: flex; align-items: center; justify-content: center;
+}
+.search-result__avatar--placeholder i { color: #1e8449; font-size: 1rem; }
+
+.search-page__result-name {
+  font-weight: 600;
+  font-size: .92rem;
+  color: #111827;
+}
+
+.search-page__result-path {
+  font-size: .75rem;
+  color: #9ca3af;
+}
+
+.search-page__result-attrs {
+  display: flex;
+  gap: 10px;
+  font-size: .78rem;
+  color: #6b7280;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}

@@ -1,0 +1,86 @@
+.az-header {
+  background: linear-gradient(90deg, #145a32 0%, #1e8449 100%);
+  height: 56px;
+  z-index: 1000;
+}
+
+.az-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1.2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.az-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.az-header__logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  gap: 4px;
+}
+.az-header__logo:hover { color: #d4efdf; }
+
+.az-header__forest-btn {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background .15s;
+  max-width: 160px;
+}
+.az-header__forest-btn:hover { background: rgba(255,255,255,0.25); }
+
+.az-header__forest-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 110px;
+}
+
+.az-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  overflow-x: auto;
+}
+
+.az-header__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: background .15s, color .15s;
+}
+.az-header__link i { font-size: 1rem; }
+.az-header__link:hover { background: rgba(255,255,255,0.15); color: #fff; }
+.az-header__link--active { background: rgba(255,255,255,0.22); color: #fff; font-weight: 600; }
+
+@media (max-width: 768px) {
+  .az-header__label { display: none; }
+  .az-header__link  { padding: 6px 9px; }
+  .az-header__forest-btn { display: none; }
+}

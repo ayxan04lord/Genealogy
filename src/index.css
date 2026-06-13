@@ -1,0 +1,21 @@
+/* Bootstrap 5 */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f0faf4;
+}
+
+/* CRA dev overlay-i — yalnız ResizeObserver xətaları üçün gizlət */
+body > iframe[style*="z-index: 2147483647"] {
+  display: none !important;
+}
